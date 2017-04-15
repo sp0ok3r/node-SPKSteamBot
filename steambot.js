@@ -21,7 +21,7 @@ var SteamTotp = require('steam-totp'); // Generates Phone Code
 
 
 var config = require('./config.json');
-var AntiSpamBetweenBots = require('/home/steamhours/Users/savedbots.json');
+var AntiSpamBetweenBots = require('./savedbots.json');
 
 var client = new SteamUser();
 
