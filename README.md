@@ -1,7 +1,9 @@
 # NodSteamBot
 
 Using Steam User: https://github.com/DoctorMcKay/node-steam-user
+
 Using Steam Totp: https://github.com/DoctorMcKay/node-steam-totp
+
 Using SteamRep: https://github.com/scholtzm/node-steamrep
 
 
