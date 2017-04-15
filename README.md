@@ -3,8 +3,8 @@
 In my version i'm using:
 
 - Steam User: https://github.com/DoctorMcKay/node-steam-user
-- Steam Totp: https://github.com/DoctorMcKay/node-steam-totp
-- Steam Rep: https://github.com/scholtzm/node-steamrep , I'm using SteamRep when any friends adds you this will check if its a scam or legit.
+- Steam Totp: https://github.com/DoctorMcKay/node-steam-totp 
+- Steam Rep: https://github.com/scholtzm/node-steamrep , when any friends adds you this will check if its a scam or legit.
 
 ## Features list: 
 - Auto AFK Message
@@ -45,8 +45,9 @@ In my version i'm using:
 ```
 After installed, you can start the bot with: node steambot.js
 
-
-### Usage of 'config.js' :
+## Editing config files: 
+#### Usage of 'config.js' :
+- Admin : "76561198041931474", SteamID64 of the account which will control the bot!
 
 - StartOnlineOROffline : '1' you can start the bot in online (1) mode or offline (0), only the game2idle will work!,
  
@@ -55,6 +56,10 @@ After installed, you can start the bot with: node steambot.js
 - LogonIdlingNonSteam : '0', If you want to idle all your games and put a non steam game first you can change 0 to 'Anything', and change 'WhenLogonStartIdlingAllGames' to 0, 
  
 - 'AllFunctions' : "1", 0 to all functions stay off, or 1 to turn on all functions,
+
+#### Usage of 'savedbots.js' :
+
+- BOTS : "76561198041931474,76561198177157710", this will prevent bots spamming each other if you got multiple bots
 
 
 ### Development
