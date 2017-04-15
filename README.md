@@ -4,22 +4,17 @@ In my version i'm using:
 
 - Steam User: https://github.com/DoctorMcKay/node-steam-user
 - Steam Totp: https://github.com/DoctorMcKay/node-steam-totp
-- Steam Rep: https://github.com/scholtzm/node-steamrep
+- Steam Rep: https://github.com/scholtzm/node-steamrep , I'm using SteamRep when any friends adds you this will check if its a scam or legit.
 
 ## Features list: 
-Auto AFK Message
-
-Auto Accept Pending Friends
-
-Auto Group Accepter
-
-Play a non-steam game and idle all other games
-
-Change states
-
-Play game with cmd: !play 10
-
-Play custom game name with: !cplay Hi i'm using SPKBOT
+- Auto AFK Message
+- Auto Accept Pending Friends
+- Auto Group Accepter
+- Play a non-steam game and idle all other games
+- Change states
+- Play game with cmd: !play 10
+- Play custom game name with: '!cplay Hi i'm using SPKBOT'
+- Etc..
 
 | Command | Info |
 | ------ | ------ |
@@ -38,7 +33,6 @@ Play custom game name with: !cplay Hi i'm using SPKBOT
 | !group | on/off |
 | !key | Use !key xxx-xxx-xxx  |
 | !func | Shows funcs on or off  |
-| ------ | ------ |
 
      
 ### Installation:
