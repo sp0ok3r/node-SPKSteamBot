@@ -6,13 +6,14 @@ Using SteamRep: https://github.com/scholtzm/node-steamrep
 
 
 
+### Installation:
 
-Installation:
+- npm install steam
+- npm install steam-user
+- npm install steamrep
+- npm install steam-totp
 
-npm install steam
-npm install steam-user
-npm install steamrep
-npm install steam-totp
+
 
 After installed, you can start the bot with: node steambot.js
 
