@@ -6,16 +6,41 @@ In my version i'm using:
 - Steam Totp: https://github.com/DoctorMcKay/node-steam-totp
 - Steam Rep: https://github.com/scholtzm/node-steamrep
 
-You got a lot of features like: 
+## Features list: 
 Auto AFK Message
-Auto Accept Pending Friends
-Auto Group Accepter
-Play a non-steam game and idle all other games
-Change state
-Play game with cmd: !play 10
-Play custom game name with: !cplay Hi i'm using SPKBOT
-All 
 
+Auto Accept Pending Friends
+
+Auto Group Accepter
+
+Play a non-steam game and idle all other games
+
+Change states
+
+Play game with cmd: !play 10
+
+Play custom game name with: !cplay Hi i'm using SPKBOT
+
+| Command | Info |
+| ------ | ------ |
+| !play | Use '!play 10,730,753' to play multiple or '!play 10' games |
+| !cplay | Use '!cplay Hello my dudes' to play custom game names|
+| !non | Use '!non Hello my dudes' to play a custom game and all or config games  |
+| !all | Use '!all' to play all games |
+| !stop | Turn off idling games |
+| !shg | Show Steam Hidden Games IDS |  
+| !state <x>| 1 Online /2 - Big Pic 🎮/ 3 - VR 😎 /4 - PHONE 📱/5- WEB 🌐 |  
+| !setname | Change bot name |
+| !notif <x>| Use !notif on to turn on|
+| !wallet | Show the bot wallet money|
+| !automsg| Use !automsg on to turn on auto afk messages |
+| !autope | Auto Acceetps pending friends |
+| !group | on/off |
+| !key | Use !key xxx-xxx-xxx  |
+| !func | Shows funcs on or off  |
+| ------ | ------ |
+
+     
 ### Installation:
 
 ```sh
