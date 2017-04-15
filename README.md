@@ -24,13 +24,13 @@ In my version i'm using:
 | !all | Use '!all' to play all games |
 | !stop | Turn off idling games |
 | !shg | Show Steam Hidden Games IDS |  
-| !state <x>| 1 Online /2 - Big Pic 🎮/ 3 - VR 😎 /4 - PHONE 📱/5- WEB 🌐 |  
+| !state <x>| 1 - Online /2 - Big Pic 🎮/ 3 - VR 😎 /4 - PHONE 📱/5- WEB 🌐 |  
 | !setname | Change bot name |
 | !notif <x>| Use !notif on to turn on|
 | !wallet | Show the bot wallet money|
-| !automsg| Use !automsg on to turn on auto afk messages |
-| !autope | Auto Acceetps pending friends |
-| !group | on/off |
+| !automsg <x>| Use !automsg on to turn on auto afk messages |
+| !autope <x>| Auto Acceetps pending friends |
+| !group <x>| on/off |
 | !key | Use !key xxx-xxx-xxx  |
 | !func | Shows funcs on or off  |
 
