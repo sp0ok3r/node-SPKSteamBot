@@ -29,7 +29,7 @@ In my version i'm using:
 | !notif <x>| Use !notif on to turn on|
 | !wallet | Show the bot wallet money|
 | !automsg <x>| Use !automsg on to turn on auto afk messages |
-| !autope <x>| Auto Acceetps pending friends |
+| !autope <x>| Auto accetps pending friends |
 | !group <x>| on/off |
 | !key | Use !key xxx-xxx-xxx  |
 | !func | Shows funcs on or off  |
