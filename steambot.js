@@ -26,10 +26,9 @@ var AntiSpamBetweenBots = require('./savedbots.json');
 var client = new SteamUser();
 
 
-// Sync Bots 'n' appIDS
-var syncBots = AntiSpamBetweenBots.BOTS.split(',').map(Number);
+// appIDS
 var AllappIDS = config.Games2Idle.split(',').map(Number);
-//* Sync Bots 'n' appIDS
+//appIDS
 
 
 // Boolean
@@ -63,15 +62,6 @@ var PhoneCodeSharedKey = config.Phone_secret;
 var CustomGameFromConfig = config.LogonIdlingNonSteam;
 //* ConfigAlias
 
-//_________________________________________________________________________________________
-//Extra Array Search
-Array.prototype.contains = function (needle) {
-    for (i in this) {
-        if (this[i] == needle) return true;
-    }
-    return false;
-}
-//_________________________________________________________________________________________
 
 function check4SharedKey(secret) {
     if (secret != "0") {
@@ -304,7 +294,7 @@ client.on("friendMessage", function (steamID, message) {
                     "\n" + SPK);
                 } else {    
                 if (config.AutoAFKMsgActivate == "1" && AutoAFKMsgBool == true) {
-                    if (syncBots.contains(steamID)) {
+                    if (AntiSpamBetweenBots.BOTS.includes(steamID)) {
                     // se a steamID é outro bot, então não mandar nada; (anti spam 2020)
                     } else {
                         client.chatMessage(steamID, config.AutoAFKMsg + "\n" + SPK); // Auto reply
