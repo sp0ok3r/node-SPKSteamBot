@@ -1,0 +1,26 @@
+{
+  "name": "sp0ok3rbot",
+  "version": "2.2.0",
+  "description": "Node bot",
+  "main": "steambot.js",
+  "dependencies": {
+    "steam": "^1.4.0",
+    "steam-totp": "^1.4.0",
+    "steam-user": "^3.19.1",
+    "steamrep": "^1.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sp0ok3r/node-SPKSteamBot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sp0ok3r/node-SPKSteamBot/issues"
+  },
+  "homepage": "https://github.com/sp0ok3r/node-SPKSteamBot#readme"
+}
