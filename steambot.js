@@ -75,10 +75,10 @@ function check4SharedKey(secret) {
 //_________________________________________________________________________________________
 // LogON
 client.logOn({
-                "accountName": Username,
-                "password": Password,
-                "twoFactorCode": check4SharedKey(config.Phone_secret),
-                "machineName": Username + " " + SPK
+          "accountName": Username,
+          "password": Password,
+          "twoFactorCode": check4SharedKey(config.Phone_secret),
+          "machineName": Username + " " + SPK
 });
 
 client.on('loggedOn', function (details) {
@@ -86,7 +86,7 @@ client.on('loggedOn', function (details) {
     client.setPersona(Number(config.StartOnlineOROffline));
     client.getPersonas([botID], function(personas) {
     AdminName = personas[botID]["player_name"];
-	console.log(Green + "  Name: "+ Yellow + personas[botID]["player_name"] + Cyan + "  LOGGED IN!");
+    console.log(Green + "  Name: "+ Yellow + personas[botID]["player_name"] + Cyan + "  LOGGED IN!");
     console.log(Green +"  Press" +White+ " CTRL" +Green+ " +" +White+ " C" +Green+ " to stop.");
     CountGamesCfg();
     Check4Functions();
@@ -452,9 +452,6 @@ client.on("friendMessage", function (steamID, message) { // callback
                 var GetKey = message.replace('!key ', '');  
                 client.redeemKey(GetKey); // callback -> result,details,packages
                 client.chatMessage(steamID, "Key activated: "+ GetKey + "\n" + SPK);
-    } else if (steamID == AdminID && message.indexOf('!reportbug') == 0) {
-                var CallNiggas = message.replace('!reportbug ', '');  
-                MultipleAdmins(CallNiggas);
         }
 });
 
