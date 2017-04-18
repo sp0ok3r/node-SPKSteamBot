@@ -28,9 +28,9 @@ In my version i'm using:
 | !setname | Change bot name |
 | !notif <x>| Use !notif on to turn on|
 | !wallet | Show the bot wallet money|
-| !automsg <x>| Use !automsg on to turn on auto afk messages |
-| !autope <x>| Auto accetps pending friends |
-| !group <x>| on/off |
+| !automsg <x>| Use !automsg on to turn on auto afk messages [on/off]|
+| !autope <x>| Auto accetps pending friends [on/off]|
+| !group <x>| Auto accetps groups invites [on/off] |
 | !key | Use !key xxx-xxx-xxx  |
 | !func | Shows funcs on or off  |
 
