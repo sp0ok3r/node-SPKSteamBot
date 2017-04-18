@@ -1,4 +1,4 @@
-# SPKSteamBot
+# SPKSteamBot [Updating]
 
 In my version i'm using:
 
