@@ -38,7 +38,6 @@ In my version i'm using:
 ### Installation:
 
 ```sh
- npm install steam
  npm install steam-user
  npm install steamrep 
  npm install steam-totp
@@ -66,6 +65,7 @@ After installed, you can start the bot with: node steambot.js
 
 Want to contribute? Great!
 
-External contact: http://steamcommunity.com/id/OfficialSp0ok3r1337/
-
-http://steamcommunity.com/id/antoino13/
+External contact: 
+http://steamcommunity.com/id/OfficialSp0ok3r1337/
+http://steamcommunity.com/profiles/76561197963405081/ 
+http://steamcommunity.com/profiles/76561197964076782/ 
