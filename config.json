@@ -16,7 +16,7 @@
 	"GameOptions" : "...",
   
 	"Games2Idle" : "753", 
-  	"MultipleGamesExample" : "753,10,730,xx,xxx,xxx,xx", 
+  	"Example-MultipleGames" : "753,10,730,xx,xxx,xxx,xx", 
  
 	"MessagesOptions:": "...",
 	
