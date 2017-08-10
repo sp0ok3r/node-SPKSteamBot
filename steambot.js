@@ -18,12 +18,14 @@ var Steam = require('steam');
 var SteamUser = require('steam-user');
 var SteamRepAPI = require('steamrep');
 var SteamTotp = require('steam-totp'); // Generates Phone Code
+var SteamCommunity = require('steamcommunity');
 
 
 var config = require('./config.json');
 var AntiSpamBetweenBots = require('./savedbots.json');
 
 var client = new SteamUser();
+var community = new SteamCommunity();
 
 
 // appIDS
@@ -91,6 +93,11 @@ client.on('loggedOn', function (details) {
     CountGamesCfg();
     Check4Functions();
     AutoPlay();
+});
+	
+client.on('webSession', function(sessionID, cookies) {
+    console.log(Green + "  Got web session: " + Yellow +'☑️');
+    community.setCookies(cookies);
 });
 
 
@@ -183,6 +190,17 @@ function FlagsChanger(state) {
 
 }
 //* Flag function
+function EditPrivacy(x){
+//1=private to all
+//2= only friends
+//3 all
+//true to keep your Steam gift inventory private, false othe
+    community.profileSettings({
+        "profile": x,
+        "comments": x,
+        "inventory": x,
+        "inventoryGifts": true })
+}
 // ******************Functions
 
 /*                 HELP COMMANDs                        */
@@ -446,10 +464,25 @@ client.on("friendMessage", function (steamID, message) {
 
 client.on("friendMessage", function (steamID, message) { // callback 
     if (steamID == AdminID && message.indexOf('!key') == 0) {
-                var GetKey = message.replace('!key ', '');  
-                client.redeemKey(GetKey); // callback -> result,details,packages
-                client.chatMessage(steamID, "Key activated: "+ GetKey + "\n" + SPK);
+        var GetKey = message.replace('!key ', '');
+        client.redeemKey(GetKey); // callback -> result,details,packages
+        client.chatMessage(steamID, "Key activated: " + GetKey + "\n" + SPK);
+    
+} else if (steamID == AdminID && message.indexOf('!privacy') == 0) {
+        var PrivacyNumber = message.replace('!privacy ', '');
+        if (isNaN(PrivacyNumber)) {
+        client.chatMessage(steamID, "Error,Please write a number \n" + SPK);
+        } else {
+        EditPrivacy(PrivacyNumber);
+        if (PrivacyNumber == 1) {
+            client.chatMessage(steamID, "Profile Privacy changed to: Private to All");
+        } else if (PrivacyNumber == 2) {
+            client.chatMessage(steamID, "Profile Privacy changed to: Only Friends can see");
+        } else if (PrivacyNumber == 3) {
+            client.chatMessage(steamID, "Profile Privacy changed to: All can see");
+            }
         }
+    }
 });
 
 client.on("friendMessage", function (steamID, message) {
