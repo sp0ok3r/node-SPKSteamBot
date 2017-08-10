@@ -33,6 +33,7 @@ In my version i'm using:
 | !group <x>| Auto accetps groups invites [on/off] |
 | !key | Use !key xxx-xxx-xxx  |
 | !func | Shows funcs on or off  |
+| !privacy <x> | 1,2,3 Change profile privacy  |
 
      
 ### Installation:
