@@ -9,8 +9,8 @@
 */
 
 
-var SPK = "SP0OK3RBOT v2.2b";
-var ver = "2.2b"; 
+var SPK = "SP0OK3RBOT v2.2c";
+var ver = "2.2c"; 
 var SPKad = true;
 
 
