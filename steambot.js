@@ -98,12 +98,10 @@ function CountGamesCfg() {
 var GameCount = ((config.Games2Idle.match(/,/g) || []).length + 1);
     if (GameCount <= 32){ // less than 32 or equal
     console.warn(White+'Detected: '+Green + GameCount + White+ " games in config!" + '\n' + SPK);
-    client.chatMessage(AdminID, 'Detected: ' + GameCount + " games in config!"+ 
-                                    '\n' + SPK);
+    client.chatMessage(AdminID, 'Detected: ' + GameCount + " games in config!"+'\n' + SPK);
 } else if (GameCount > 32) { // bigger than 32
     console.warn(White+'Detected: '+Red + GameCount + White+ " games in config! [MAX:32]" + '\n' + SPK);
-    client.chatMessage(AdminID, 'Max games exceeded: ' + GameCount + " | Max 32. "+ 
-                                    '\n' + SPK);
+    client.chatMessage(AdminID, 'Max games exceeded: ' + GameCount + " | Max 32. "+'\n' + SPK);
     setTimeout(function(){ process.exit(1) },3500);                           
     }
 }
@@ -114,8 +112,7 @@ var GameCount = ((config.Games2Idle.match(/,/g) || []).length + 1);
         client.gamesPlayed(SPK);
         setTimeout(function(){ client.gamesPlayed(AllappIDS) },3500);
         client.chatMessage(AdminID, 'Starting idling all games on config...' +
-                                    '\nTo stop write !stop' +
-                                    '\n' + SPK);
+                                    '\nTo stop write !stop' +'\n' + SPK);
     } else if (CustomGameFromConfig != "0") {
         client.gamesPlayed(SPK);
         setTimeout(function(){ NONSTEAMplay(CustomGameFromConfig); },3500);
