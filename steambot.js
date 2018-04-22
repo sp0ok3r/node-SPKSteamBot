@@ -13,8 +13,6 @@ var SPK = "SP0OK3RBOT v2.2c";
 var ver = "2.2c"; 
 var SPKad = true;
 
-
-var Steam = require('steam');
 var SteamUser = require('steam-user');
 var SteamRepAPI = require('steamrep');
 var SteamTotp = require('steam-totp'); // Generates Phone Code
